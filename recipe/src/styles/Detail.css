@@ -1,0 +1,83 @@
+.detail{
+    background-color: var(--background);
+}
+.detail-category{
+    color: var(--text-orange);
+}
+
+.detail-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-icons > .icons1{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.detail-icons > .icons1 span:hover{
+    color: var(--text-orange);
+}
+
+.detail-icons > .icons1 span{
+    color: #909090;
+    margin-right: 5px;
+}
+
+.detail-icons > .icons1 i{
+    margin-right: 5px;
+    color: var(--text-orange);
+}
+
+.detail-icons > .icons2{
+    display: flex;
+    gap: 15px;
+    color: #909090;
+    cursor: pointer;
+}
+
+.detail-icons > .icons2 > *:hover{
+    color: var(--text-orange);
+}
+
+.detail .desc, .detail-title{
+    color: var(--text-primary);
+}
+
+.notes{
+    display: flex;
+}
+
+.time,
+.cooktime,
+.serve,
+.view{
+    background-color:#f2f2f2;
+    width: 100%;
+    margin: 2px;
+    padding: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.time > div:nth-child(1),
+.cooktime > div:nth-child(1),
+.serve > div:nth-child(1),
+.view > div:nth-child(1){
+    color: #909090;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 768px){
+    .notes{
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .detail-icons > .icons1, .detail-icons > .icons2{
+        flex-wrap: wrap;
+    }
+}

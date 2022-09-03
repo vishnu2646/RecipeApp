@@ -1,0 +1,32 @@
+.tranding-outter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tranding-outter > a{
+    width: 48%;
+}
+
+.tranding > img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.tanding-content{
+    padding: 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px){
+    .tanding-content > .details{
+        flex-wrap: wrap;
+    }
+
+    .tanding-content > * {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

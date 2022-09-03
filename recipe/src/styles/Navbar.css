@@ -1,0 +1,13 @@
+.nav-link.login{
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-link.login:hover{
+    cursor: pointer;
+    color: rgb(253, 33, 70);
+}
+
+.create-btn{
+    border-radius: 20px;
+}
